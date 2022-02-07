@@ -5,7 +5,7 @@ import { getAllPostsData } from "../lib/posts";
 export default function Blog({ posts }) {
   return (
     <Layout title="Blog">
-      <ul className="m-10">
+      <ul className="m-9">
         {posts && posts.map((post) => <Post key={post.id} post={post} />)}
       </ul>
     </Layout>
